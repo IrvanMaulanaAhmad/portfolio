@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomePage Tailwind CSS</title>
+
+	<!-- Tailwind -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<style>
+		body{
+			background-color: #f4f4f4;
+		}
+	</style>
+</head>
+<body>
+	<div class="container m-0">
+		<!-- Content Header -->
+		<div class="w-screen h-auto bg-white shadow-xl">
+			<div class="flex justify-center pt-8">
+				<div>
+					<p id="opening" class="text-4xl font-mono font-medium text-center"></p>
+					<p id="subop" class="text-lg xl:text-xl lg:text-xl font-mono text-center"></p>
+				</div>
+			</div>
+			<div class="pt-8 pb-4 flex justify-center font-mono">
+				<div class="px-4 xl:px-16 lg:px-12 md:px-8">
+					<span class="hover:text-blue-600 font-medium hover:font-bold text-lg inline">Articles</span>
+				</div>
+				<div class="px-4 xl:px-16 lg:px-12 md:px-8">
+					<span class="hover:text-blue-600 font-medium hover:font-bold text-lg inline">Portfolio</span>
+				</div>
+				<div class="px-4 xl:px-16 lg:px-12 md:px-8">
+					<span class="hover:text-blue-600 font-medium hover:font-bold text-lg inline">About Me</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Article -->
+		<div class="mt-8">
+			<a href="#">
+				<div class="h-auto m-auto bg-white shadow-xl px-8 py-8 grid grid-cols-5 w-2/3 rounded-md">
+					<div class="col-span-5 lg:col-span-2 xl:col-span-2">
+						<img src="assets/image/2.jpg" alt="" class="max-w-full h-auto rounded-lg">
+					</div>
+					<div class="col-span-5 lg:col-span-3 xl:col-span-3">
+						<div class="justify-center lg:px-8 xl:px-8">
+							<p class="text-xl font-mono font-bold">Panduan lengkap hijrah dari PHP ke NodeJS</p>
+							<div class="mb-4">
+								<img src="assets/image/calendar.svg" alt="" class="w-4 h-auto inline">
+								<span>Sabtu, 29 Agustus, 2020</span>
+							</div>
+							<span class="whitespace-pre-wrap">Enggak bro, bercanda. Ini cuma tutorial biasa aja. Kalau masih mau pakai PHP ya silahkan</span>
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<!-- Article version 2 -->
+		<div class="mt-16 flex flex-col lg:flex-row xl:flex-row justify-center">
+			<div class="h-auto w-2/3 lg:w-1/3 xl:w-1/4 m-auto bg-white shadow-xl rounded-lg block lg:inline-block xl:inline-block mx-4 my-4">
+				<div>
+					<img src="assets/image/dio.jpg" alt="" class="h-auto w-auto rounded-t-lg">
+				</div>
+				<div class="p-4">
+					<span class="font-mono font-bold text-lg">You Were Expecting An Article But It Was Me! Dio!</span>
+					<div class="mb-4">
+						<img src="assets/image/calendar.svg" alt="" class="w-4 h-auto inline">
+						<span>Sabtu, 29 Agustus, 2020</span>
+					</div>
+					<span>MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA </span>
+				</div>
+			</div>
+			<div class="h-auto w-2/3 lg:w-1/3 xl:w-1/4 m-auto bg-white shadow-xl rounded-lg block lg:inline-block xl:inline-block mx-4 my-4">
+				<div>
+					<img src="assets/image/dio.jpg" alt="" class="h-auto w-auto rounded-t-lg">
+				</div>
+				<div class="p-4">
+					<span class="font-mono font-bold text-lg">You Were Expecting An Article But It Was Me! Dio!</span>
+					<div class="mb-4">
+						<img src="assets/image/calendar.svg" alt="" class="w-4 h-auto inline">
+						<span>Sabtu, 29 Agustus, 2020</span>
+					</div>
+					<span>MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA </span>
+				</div>
+			</div>
+			<div class="h-auto w-2/3 lg:w-1/3 xl:w-1/4 m-auto bg-white shadow-xl rounded-lg block lg:inline-block xl:inline-block mx-4 my-4">
+				<div>
+					<img src="assets/image/dio.jpg" alt="" class="h-auto w-auto rounded-t-lg">
+				</div>
+				<div class="p-4">
+					<span class="font-mono font-bold text-lg">You Were Expecting An Article But It Was Me! Dio!</span>
+					<div class="mb-4">
+						<img src="assets/image/calendar.svg" alt="" class="w-4 h-auto inline">
+						<span>Sabtu, 29 Agustus, 2020</span>
+					</div>
+					<span>MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA MUDA </span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="w-screen h-auto mt-16">
+			<div class="bg-white py-4">
+				<p class="text-center">&copy; 2020 Irvan Maulana Ahmad</p>
+			</div>
+		</div>
+	</div>
+	<script>
+		// some shit so the header text will change everytime website is reloading
+		const opening = ["Hi There!", "You're COOL!!", "Have a Nice day!!", "Love Your Self ❤", "Good Luck!", "Push yourself", "Do it now"];
+		const subop = ["How are you?", "Keep it Up!", "And Share the Happyness", "Like you Love Your Family ❤", "You Can Do It!", "because no one else is going to do it for you", "Sometimes later becomes never"]
+		const rnum = Math.floor(Math.random() * 7)
+		console.log(rnum)
+		console.log(opening[rnum])
+		document.getElementById("opening").innerHTML = opening[rnum]
+		document.getElementById("subop").innerHTML = subop[rnum]
+	</script>
+</body>
+</html>
